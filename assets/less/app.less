@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&subset=latin,latin-ext);
+
+canvas {
+  background-color: #000;
+  overflow: hidden
+}
+
+#canvas {
+  float: left;
+  height: 500px;
+  width: 100%;
+
+  canvas {
+    height: 500px;
+    width: 100%;
+  }
+
+  #rez {
+    background: url('../img/logo-n11dev.png') no-repeat center center;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+}
+
+.col-1 {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.col-2 {
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  width: 50%;
+}
+
+#wrapper {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  .content {
+    margin: 0 auto;
+    width: 1180px;
+
+    h1 {
+      font-size: 34px;
+      text-align: center;
+      margin: 32px 0;
+      font-weight: 400;
+    }
+
+    .btn-contaner {
+      display: inline-block;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .col-3 {
+      float: left;
+      text-align: center;
+      width: 33.33%;
+
+      h2 {
+        font-size: 20px;
+        font-weight: 800;
+        margin: 0 0 5px 0;
+        padding: 0;
+
+        a {
+          color: #3c94d9;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+        }
+
+      }
+
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+      p  {
+        color: #808080;
+        font-size: 16px;
+        line-height: 1.5em;
+        padding: 0 15px;
+      }
+
+    }
+  }
+
+  .content-full {
+    background: #272727;
+    margin-top: 50px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+    .content {
+      padding: 40px 0;
+      overflow: hidden;
+
+      h2 {
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      #job {
+        color: #fff;
+        padding: 0 25px;
+        strong {
+          font-weight: 600;
+        }
+
+        p {
+          line-height: 1.9em;
+        }
+
+      }
+
+      #twitter {
+        z-index: 1;
+        padding-left: 25px;
+      }
+
+    }
+
+    &:after {
+      background: #fff;
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 50%;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 1187px) {
+
+  #canvas {
+    height: 300px;
+    #rez, canvas {
+      height: 300px;
+    }
+  }
+
+  #wrapper {
+    .content {
+      padding: 0 20px;
+      width: 100%;
+
+      .col-3 {
+        background: #fff;
+        padding: 25px;
+        margin: 0 0 10px 0;
+        width: 100%;
+      }
+    }
+    .content-full {
+
+      .content {
+        padding-bottom: 0;
+      }
+
+      .col-2 {
+        width: 100%;
+      }
+
+      #twitter  {
+        background: #fff;
+        margin-top: 40px;
+        padding: 20px 0 40px 0 !important;
+      }
+
+      &:after {
+        background: transparent;
+        position: static;
+      }
+
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
