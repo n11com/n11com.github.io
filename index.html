@@ -1,1 +1,79 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>n11 Dev Team</title>
+	<link rel="stylesheet" href="assets/css/normalize.css" />
+	<link rel="stylesheet" href="assets/css/app.css" />
+	<script src="assets/js/min/util.config-min.js"></script>
+</head>
+<body onload="start()" onresize="resize()" onorientationchange="resize()">
+
+<div id="canvas">
+	<div id="rez"></div>
+	<canvas id="starfield" style="background-color:#000000"></canvas>
+	<div id="space" style="position:absolute;background-color:transparent;"></div>
+</div>
+
+<div id="wrapper">
+	<div class="content">
+		<h1>Recent Projects</h1>
+
+		<div class="col-3">
+			<h2><a href="https://github.com/n11com/imic">IMIC</a></h2>
+
+			<h3>I AM IMAGE CONVERTOR</h3>
+
+			<p>IMAC is an application that allows to scale and optimize images before serving. We use imic to serve our images for internal use.</p>
+		</div>
+		<div class="col-3">
+			<h2><a href="https://github.com/n11com/WebApplicationDevelopment">WAD Lecture</a></h2>
+
+			<h3>WEB APPLICATION DEVELOPMENT LECTURES</h3>
+
+			<p>This is the samples that are being used in a lecture in Bahçeşehir University by Yusuf Soysal. It has sample web application and code samples.</p>
+		</div>
+		<div class="col-3">
+			<h2><a href="https://github.com/n11com/AndroidAlphabeticalIndexListView">AAILV</a></h2>
+
+			<h3>ANDROID ALPHABETICAL INDEX LIST WIEV</h3>
+
+			<p>AAILV is a listview example that has sections, alphabetical index and filter properties. It is similar to iOS Contacts.</p>
+		</div>
+
+		<div class="col-1 btn-contaner">
+			<a href="https://github.com/n11com/n11com.github.io" class="btn" title="Follow Us at Github">FOLLOW US AT GITHUB</a>
+		</div>
+	</div>
+
+	<div class="content-full">
+		<div class="content">
+			<div id="job" class="col-2">
+				<h2>Job Posts</h2>
+
+				<p>If you are keen on <strong>Web based software development</strong>, OO, scalable architectures, TDD, Agile Methodologies,likes to play with Scala, ElasticSearch, Akka <br /><br /> Or you are a <strong>Frontend Ninja</strong> and like google closure, less, node.js <br /><br /> Or you are a <strong>Hardcore Mobile Developer</strong> (both ios and android)</p>
+
+				<div class="col-1 btn-contaner">
+					<a href="mailto:ik@n11.com?Subject=Github DEV Job Application" class="btn" title="Send us your resume">SEND US YOUR RESUME</a>
+				</div>
+			</div>
+			<div id="twitter" class="col-2">
+				<h2>Twitter Feed</h2>
+				<a class="twitter-timeline" href="https://twitter.com/n11comDev" data-widget-id="670165058840862720" width="590" height="300">@n11comDev tarafından gönderilen tweetler</a>
+				<script>!function (d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+					if (!d.getElementById(id)) {
+						js = d.createElement(s);
+						js.id = id;
+						js.src = p + "://platform.twitter.com/widgets.js";
+						fjs.parentNode.insertBefore(js, fjs);
+					}
+				}(document, "script", "twitter-wjs");</script>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
